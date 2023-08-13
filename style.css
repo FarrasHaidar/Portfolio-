@@ -171,3 +171,36 @@ section::before {
 #work-2:hover::after {
     content: 'Android';
 }
+
+.row .col p {
+    text-align: justify;
+}
+
+.row .sosmed {
+    width: 40px;
+    height: 40px;
+    margin-right: 2px;
+}
+
+.contact::before {
+    content: 'Contact';
+}
+
+.contact-form {
+    border: 1px solid black;
+    padding: 64px 32px;
+    border-radius: 24px;
+}
+
+.form-label {
+    font-weight: 500;
+}
+
+.contact {
+    padding-bottom: 128;
+}
+
+.sosmed-detail {
+    margin-left: 64px;
+    align-items: center;
+}
