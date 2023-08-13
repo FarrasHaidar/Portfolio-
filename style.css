@@ -34,6 +34,10 @@ section::before {
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
 }
 
+.home img {
+    width: 100%;
+}
+
 .home h1 { 
     font-size: 72px;
 }
@@ -179,7 +183,6 @@ section::before {
 .row .sosmed {
     width: 40px;
     height: 40px;
-    margin-right: 2px;
 }
 
 .contact::before {
@@ -204,3 +207,4 @@ section::before {
     margin-left: 64px;
     align-items: center;
 }
+

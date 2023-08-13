@@ -17,39 +17,39 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link active" aria-current="page" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
+                  <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Experience</a>
+                  <a class="nav-link" href="#experience">Experience</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link" href="#contact">Contact</a>
                 </li>
               </ul>
             </div>
           </div>
       </nav>
       <section id="home" class="home container">
-        <div class="row d-flex align-items-center">
-            <div class="col-8">
+        <div class="row d-flex align-items-center flex-md-row flex-column-reverse">
+            <div class="col-12 col-md-8">
                 <h3 class="fw-semibold">Hi! I am</h3>
                 <h1 class="fw-bold">Farras Haidar</h1>
                 <p>An undergraduate student majoring in Information System at Brawijaya University</p>
                 <a class="btn button" href="index-coder.html" target="_blank">Click Here!</a>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-md-4">
                 <div class="circle-container">
-                <img src="images/landing_page.jpg" alt="Potrait">
+                <img class="img-fluid" src="images/landing_page.jpg" alt="Potrait">
             </div>
             </div>
         </div>
-        <div class="arrow w-100 d-flex align-items-center flex-column mt-5">
-            <a class="text-decoration-none text-dark" href="#about">More Info</a>
+        <a href="#about"class="text-decoration-none arrow w-100 d-flex align-items-center flex-column mt-5">
+            <div class="text-dark">More Info</div>
             <img id="arrow" class="mt-1" src="images/arrow.svg" alt="arrow icon">
-        </div>
+        </a>
       </section>
       <section id="about" class="about container">
         <p>My name is Muhammad Farras Haidar. I am from Brawijaya University, majoring in Information Systems within the Faculty of Computer Science, and I am a member of the class of 2020. I have a strong passion for the world of IT, with a special focus on UI/UX, Web Development, and Android programming. In addition, I am enthusiastic about embracing new challenges and making progress in overcoming them.</p>
@@ -123,7 +123,7 @@
       </section>
       <section id="contact" class="contact container">
         <div class="row">
-          <div class="col">
+          <div class="col-12 col-lg-6">
             <form class="contact-form" onsubmit="onFormSubmit(event)">
               <div class="mb-3">
                 <label for="inp-email" class="form-label">Email address</label>
@@ -142,7 +142,7 @@
               </div>
             </form>
           </div>
-          <div class="col">
+          <div class="col-12 col-lg-5">
             <p class="contact-detail mt-5 p-md-5">For a comprehensive understanding of my profile and experiences, please explore the sections above. 
               Should you require further information or have any inquiries, please feel free to get in touch with me using the contact details provided below.</p>
             <div class="row d-flex align-items-center gap-3 sosmed-detail">
@@ -150,19 +150,19 @@
                 <a href="https://www.linkedin.com/in/farras-haidar" target="_blank">
                   <img class="sosmed" src="/images-coder/linked-in.png" alt="">
                 </a>
-                <p>Farras Haidar</p>
+                <p class="mb-0 ms-2">Farras Haidar</p>
               </div>
               <div class="col d-flex align-items-center" id="instagram-icon">
                 <a href="https://www.instagram.com/farrasshdr/" target="_blank">
                   <img class="sosmed" src="images/instagram.avif" alt="">
                 </a>
-                <p>@farrasshdr</p>
+                <p class="mb-0 ms-2">@farrasshdr</p>
               </div>
               <div class="col d-flex align-items-center" id="twitter-icon">
                 <a href="https://www.instagram.com/farrasshdr/" target="_blank">
                   <img class="sosmed" src="images/Twitter.svg" alt="">
                 </a>
-                <p>@farrasshdr</p>
+                <p class="mb-0 ms-2">@farrasshdr</p>
               </div>              
             </div>
           </div>
