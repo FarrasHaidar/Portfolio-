@@ -83,6 +83,43 @@ section::before {
     display: none;
 }
 
+.experience::before {
+    content: 'Experience';
+}
+
+.exp-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "work-1 work-2" "bonus bonus-2";
+    gap: 8px;
+}
+
+.exp-img img {
+    width: 100%;
+    border: 2px solid whitesmoke;
+}
+
+.exp-img-item{
+    position: relative;
+}
+
+.exp-img-item:hover::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 500;
+    justify-content: center;
+}
+
+
 @keyframes upDown {
     0% {
         transform: translateY(0);
@@ -93,4 +130,44 @@ section::before {
     100% {
         transform: translateY(0);
     }
+}
+
+#bonus-img {
+    width: 300px;
+    height: 320px;
+    grid-area: bonus;
+}
+
+#bonus:hover::after {
+    content: 'Merbabu';
+}
+
+#bonus-2-img {
+    width: 300px;
+    height: 320px;
+    grid-area: bonus-2;
+}
+
+#bonus-2:hover::after {
+    content: 'Arjuno';
+}
+
+#work-1-img {
+    width: 300px;
+    height: 320px;
+    grid-area: work-1;
+}
+
+#work-1:hover::after {
+    content: 'Web and UI/UX';
+}
+
+#work-2-img {
+    width: 300px;
+    height: 320px;
+    grid-area: work-2;
+}
+
+#work-2:hover::after {
+    content: 'Android';
 }
